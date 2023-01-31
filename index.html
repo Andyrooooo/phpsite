@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-------------------- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways ---------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Cabot cruises site">
+    <meta name="author" content="Andrew Kester">
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ely1kpo.css">
+
+    <script src="https://kit.fontawesome.com/e5ff2f4c45.js" crossorigin="anonymous"></script>
+
+    <title>Cabot Cruises</title>
+  </head>
+  <body>
+    <div id="bodyWrapper">
+
+      <!---------------------------------------------------------------------- header section --------------------------------------------------------------------------->
+      <div id="headerWrapper">
+        <header class="clearfix">
+          <figure class="logo">
+            <img src="images/logo/logo_default2.png" alt="cabot logo" srcset="images/logo/logo1.png 1x, images/logo/logo2.png 2x, images/logo/logo3.png 3x">
+          </figure>
+
+          <a href="tel:18005551234">1-800-555-1234</a>
+        </header>
+      </div>
+        <!---------------------------------------------------------------------- nav section --------------------------------------------------------------------------->
+        <div id="navWrapper">
+          <nav>
+
+          <button id="hamburgerMenu">
+            <span class="hamburger">&#9776;</span>
+            <span class="x hidden">&otimes;</span>
+          </button>
+
+          <!-- <form href="#" method="GET"> 
+            <input type="search" name="text" class="search" placeholder="search...">
+            <input type="image" name="submit" class="submit" src="./images/search_icon_12.svg">
+          </form> -->
+
+          <form method="GET" id="searchForm"> 
+            <input type="search" name="text" class="search" placeholder="search...">
+            <button  class="submit" type="submit"><img src="./images/search_icon_12.svg" alt="Search"></button>  
+          </form> 
+          
+
+          <div class="list hidden">
+            <ul id="primaryNav">
+            <li class="menuList"><a href="#">Home</a>
+            <li class="cruise"><a href="#">Cruises</a></li> 
+            <li class="agent"><a href="#">Agent <span class="arrow">&#9660;</span></a>
+              <ul class="secondList hidden">
+                <li class="child"><a href="#">Meet our Team</a></li>
+                <li class="secondChild"><a href="#">Schedule an Appointment</a></li>
+              </ul>
+            </li> 
+            <li class="book"><a href="#">Book</a></li> 
+
+            </ul>
+          </div>
+
+          </nav>
+        </div>
+
+    <!---------------------------------------------------------------------- main section --------------------------------------------------------------------------->
+    <div id="mainWrapper">
+    <main>
+
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/beach_sml.webp" media="(max-width: 35rem)">
+                  <source srcset="./images/beach_lrg.webp" media="min-width: 35rem)">
+                  <img src="./images/beach_lrg.webp" alt="The Beach">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/boat_sml.webp" media="(max-width: 35rem)">
+                  <source srcset="./images/boat_lrg.webp" media="min-width: 35rem)">
+                  <img src="./images/boat_lrg.webp" alt="Cruise Boat">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/party_sml.webp" media="(max-width: 35rem)">
+                  <source srcset="./images/party_lrg.webp" media="min-width: 35rem)">
+                  <img src="./images/party_lrg.webp" alt="People having fun on the boat">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./images/trail_sml.webp" media="(max-width: 35rem)">
+                  <source srcset="./images/trail_lrg.webp" media="min-width: 35rem)">
+                  <img src="./images/trail_lrg.webp" alt="Hiking trail in Cabot">
+                </picture>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+
+        <h2>Recent Blog Articles</h2>
+
+        <div id="articles">
+          <div class="article1">
+            <label class="top">Weather</label>
+            <a href="#"><img src="./images/blog/blog1.webp" alt="Beach"></a>
+            <label class="bottom">February 1, 2023</label>
+          </div>
+
+          <div class="article2">
+            <label class="top">Entertainment</label>
+            <a href="#"><img src="./images/blog/blog2.webp" alt="DJ"></a>
+            <label class="bottom">February 3, 2023</label>
+          </div>
+
+          <div class="article3">
+            <label class="top">Dining</label>
+            <a href="#"><img src="./images/blog/blog3.webp" alt="Restaurant"></a>
+            <label class="bottom">February 4, 2023</label>
+          </div>
+
+          <div class="article4">
+            <label class="top">Events</label>
+            <a href="#"><img src="./images/blog/blog4.webp" alt="Microphone"></a>
+            <label class="bottom">February 5, 2023</label>
+          </div>
+        </div>
+
+      </main>
+    </div>  <!-- end of main wrapper -->
+
+    <!---------------------------------------------------------------------- footer section --------------------------------------------------------------------------->
+    <div id="footerWrapper"> 
+
+      <footer>
+        <div id="footerDetails">
+
+          <div id="contactInfo">
+            <h2>Contact Us</h2>
+            <h3>Cabot Cruises</h3>
+
+            <p><a href="https://goo.gl/maps/vzutyJZQHnP7JAuy9" target="_blank">23 South Main St. Suite 16 <br> lexington, VA 24450</a></p>
+
+            <h2>Phone:</h2>
+            <a href="tel:18005551234">1-800-555-1234</a>
+
+            <h2>Hours of Operation:</h2>
+            <p>Monday - Friday 9am - 4pm</p>
+          </div>
+
+          <div id="newsLetter">
+            <h2>News Letter</h2>
+
+            <p>Subscribe to our email list and stay up-to-date with our 
+              hottest offers and latest specials</p>
+
+            <form method="get"> 
+              <input type="email" class="email" placeholder="jondoe@gmail.com" required>
+              <input  class="submit" type="submit" value="Subscribe">
+            </form> 
+          </div>
+
+          <div id="aboutUs">
+            <h2>Why Cabot Cruises</h2>
+
+            <p class="part1">Cabot Cruises is a travel agency providing the best cruise 
+              deals on our online travel website. We can help you with all 
+              inclusive vacaMons including discounted cruises.</p>
+
+            <p>We do not sell travel to residents of Delaware, Iowa, 
+              Florida, Hawaii and Washington state because those states 
+              are just wierd. If you are a resident of one of these states, 
+              call your congressman and tell them to change the 
+              regulaMons.</p>
+          </div>
+
+        </div> <!-- End of foot details -->
+        
+      </footer>
+
+    </div> <!-- End of footer wrapper -->
+
+    <!-- soical media links, and copywrite -->
+    <div id="linksWrapper">
+      <div id="socialMedia">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-youtube"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-pinterest"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+      </div>
+
+      <p>&copy; 2022 &bull; Andrew Kester &bull; <a href="https://github.com/Andyrooooo">Github</a></p>
+    </div>
+
+    </div> <!-- End of body wrapper -->
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- JSON-LD data -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "image":"https://voluble-alfajores-fd0f68.netlify.app/images/logo/logo2.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lexington",
+            "addressRegion": "VA",
+            "postalCode": "24450",
+            "streetAddress": "23 South Main St. Suite 16"
+          },
+          "name": "Cabot Cruises",
+          "openingHours": [
+            "Mo-Sa 8:00-17:30",
+            "Su 10:00-14:00"
+          ],
+          "priceRange": "Please Call",
+          "telephone": "1-800-555-1234",
+          "url": "https://voluble-alfajores-fd0f68.netlify.app/"
+        }
+        </script>
+
+  </body>
+</html>

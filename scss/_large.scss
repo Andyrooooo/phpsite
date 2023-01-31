@@ -1,0 +1,138 @@
+header, nav, footer, main, #linksWrapper {
+    max-width: 75rem;
+    margin: auto;
+}
+div#bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    div#navWrapper {order: 2}
+    div#headerWrapper {order: 1}
+    div#mainWrapper {order: 3}
+    div#footerWrapper {order: 4}
+    div#linksWrapper {order: 5}
+}
+
+/* ---------------------------------------------------- Header section ------------------------------------------------------------ */
+
+/* ---------------------------------------------------- nav section ------------------------------------------------------------ */
+nav {
+    padding-top: .6rem;
+    padding-bottom: 1.2rem;
+    button#hamburgerMenu {
+        padding: 0;
+        margin: 0;
+    }
+
+    form {
+        float: right;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .x {
+        display: none;
+    }
+
+    div.list {
+        display: block;
+        float: left;
+        padding-top: 5px;
+        margin-left: 1%;
+
+        ul#primaryNav {
+            margin-top: 0;
+            display: flex;
+        }
+
+        ul#primaryNav {
+            li.agent, li.cruise, li.menuList {border: none;}
+        }
+
+        ul#primaryNav {
+            li.agent, li.cruise, li.menuList, li.book {
+                padding-top: 0;
+                padding-right: .75rem;
+            }
+        }
+
+        ul#primaryNav {
+            li.agent, li.cruise, li.book {
+                padding-left: .75rem;
+            }
+        }
+
+        ul#primaryNav li.agent span.arrow {
+            margin-left: 8px;
+        }
+
+        ul#primaryNav li {
+            padding-bottom: 0;
+            text-align: left;
+
+            a {
+                padding: 5px 10px;
+            }
+        }
+
+        ul#primaryNav li.agent ul {
+            position: absolute;
+            z-index: 999;
+            background-color: $colorOne;
+            margin: .85rem 0 0 0;
+            padding: 0 1rem 9px 1rem;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        ul#primaryNav li.agent ul li.child {
+            margin-left: 0;
+        }
+
+        ul#primaryNav li.agent ul li.secondChild {
+            margin-top: 10px;
+        }
+
+    } 
+
+    form#searchForm {
+
+        //search container
+        .search{
+        margin-top: 0;
+        margin-bottom: .6rem;
+        }
+
+        .submit {
+            padding: 6.75px 15px;
+        }
+    }
+}
+
+
+/* ---------------------------------------------------- main section ------------------------------------------------------------ */
+div#articles {
+    div.article1, div.article2, div.article3, div.article4 {
+    flex-basis: 24%;
+    }
+}
+
+div#footerDetails {
+    justify-content: space-between;
+
+    div#contactInfo, div#newsLetter, div#aboutUs {
+        flex-basis: 32%;
+    }
+}
+
+/* -------------------------------------------------------- footer section ------------------------------------------------------------- */
+div#newsLetter {
+    h2 {
+        margin-top: 1.2rem;
+    }
+}
+
+div#aboutUs {
+    h2 {margin-top: 1.9rem;}
+}
