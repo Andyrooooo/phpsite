@@ -1,7 +1,7 @@
 </main>
     </div>  <!-- end of main wrapper -->
-
     <!---------------------------------------------------------------------- footer section --------------------------------------------------------------------------->
+
     <div id="footerWrapper"> 
 
       <footer>
@@ -68,7 +68,7 @@
     </div> <!-- End of body wrapper -->
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="main.js"></script>
 
       <!-- JSON-LD data -->
       <script type="application/ld+json">

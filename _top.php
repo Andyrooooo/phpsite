@@ -15,7 +15,7 @@
 
     <script src="https://kit.fontawesome.com/e5ff2f4c45.js" crossorigin="anonymous"></script>
 
-    <title>Cabot Cruises</title>
+    <title><?php echo($ptitle) ?></title>
   </head>
   <body>
     <div id="bodyWrapper">
@@ -39,24 +39,28 @@
             <span class="x hidden">&otimes;</span>
           </button>
 
+          <!-- <form href="#" method="GET"> 
+            <input type="search" name="text" class="search" placeholder="search...">
+            <input type="image" name="submit" class="submit" src="./images/search_icon_12.svg">
+          </form> -->
+
           <form method="GET" id="searchForm"> 
             <input type="search" name="text" class="search" placeholder="search...">
-            <button  class="submit" type="submit"><img src="./images/search_icon_12.svg" alt="Search"></button>  
+            <button  class="submit" type="submit"><img src="images/search_icon_12.svg" alt="Search"></button>  
           </form> 
           
 
           <div class="list hidden">
             <ul id="primaryNav">
-            <li class="menuList"><a href="#">Home</a>
-            <li class="cruise"><a href="#">Cruises</a></li> 
-            <li class="agent"><a href="#">Agent <span class="arrow">&#9660;</span></a>
-              <ul class="secondList hidden">
-                <li class="child"><a href="#">Meet our Team</a></li>
-                <li class="secondChild"><a href="#">Schedule an Appointment</a></li>
-              </ul>
-            </li> 
-            <li class="book"><a href="#">Book</a></li> 
-
+              <li class="menuList"><a href="index.php">Home</a></li>
+              <li class="cruise"><a href="cruises.php">Cruises</a></li> 
+              <li class="agent"><a href="#">Agents<span class="arrow">&#9660;</span></a>
+                <ul class="secondList hidden">
+                  <li class="child"><a href="agentWendy.php">Agent Wendy</a></li>
+                  <li class="secondChild"><a href="agentDan.php">Agent Dan</a></li>
+                </ul>
+              </li> 
+              <li class="book"><a href="book.php">Book a Cruise</a></li> 
             </ul>
           </div>
 

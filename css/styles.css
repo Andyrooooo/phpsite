@@ -377,6 +377,12 @@ nav li.cruise, nav li.agent, nav li.menuList {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+nav .parent {
+  color: #fff86e; /* This is where we change the parent */
+}
+nav .active {
+  color: #d4ca00; /* This is where we change the active */
+}
 nav li.book {
   padding-bottom: 5px;
   padding-top: 5px;
@@ -457,7 +463,7 @@ form#searchForm .submit {
 
 /* ---------------------------------------------------- Header section ------------------------------------------------------------ */
 header figure.logo {
-  margin: 1rem 0 -0.1rem 1%;
+  margin: 1rem 0 1rem 1%;
   padding-top: 0.3rem;
 }
 header a {
@@ -466,66 +472,225 @@ header a {
   font-family: roboto;
 }
 
-/* ---------------------------------------------------- main section ------------------------------------------------------------ */
-main .swiper {
+/* --------------------------------------------------------------------------- main homepage section -------------------------------------------------------------------- */
+div#homepageSection .swiper {
   margin-bottom: 1rem;
 }
-main .swiper .swiper-wrapper {
+div#homepageSection .swiper .swiper-wrapper {
   margin-bottom: 35px;
 }
-main .swiper .swiper-slide {
+div#homepageSection .swiper .swiper-slide {
   width: 100%;
   height: auto;
 }
-main .swiper .swiper-slide img {
+div#homepageSection .swiper .swiper-slide img {
   display: block;
   width: 100%;
 }
-main .swiper span.swiper-pagination-bullet {
+div#homepageSection .swiper span.swiper-pagination-bullet {
   padding: 2px;
   background-color: #006A66;
 }
-main h2 {
+div#homepageSection h2 {
   padding-bottom: 0;
   margin-bottom: -2rem;
   margin-left: 1%;
   color: #006A66;
 }
-
-div#articles {
+div#homepageSection div#articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-div#articles label {
+div#homepageSection div#articles label {
   text-align: center;
   display: block;
   color: #FFFDD4;
   padding: 10px 0;
 }
-div#articles .top {
+div#homepageSection div#articles .top {
   position: relative;
   z-index: 999;
   transform: translateY(100%);
   background-color: rgba(0, 106, 102, 0.5);
 }
-div#articles .bottom {
+div#homepageSection div#articles .bottom {
   transform: translateY(-111%);
   /* transform: translateY(-214%); */
   background-color: rgba(0, 106, 102, 0.5);
 }
-div#articles div.article1, div#articles div.article2, div#articles div.article3, div#articles div.article4 {
+div#homepageSection div#articles div.article1, div#homepageSection div#articles div.article2, div#homepageSection div#articles div.article3, div#homepageSection div#articles div.article4 {
   flex-basis: 48%;
 }
-div#articles img {
+div#homepageSection div#articles img {
   width: 100%;
   opacity: 0.75;
 }
-div#articles img:hover {
+div#homepageSection div#articles img:hover {
   opacity: 1;
 }
 
-/* ---------------------------------------------------- footer section ------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------- main cruises section -------------------------------------------------------------------- */
+div#cruisesSection h1 {
+  color: #006A66;
+  margin-left: 1%;
+  margin-bottom: 1rem;
+}
+div#cruisesSection div#cruiseLines div {
+  margin-bottom: 1rem;
+}
+div#cruisesSection div#cruiseLines img {
+  width: 100%;
+}
+div#cruisesSection div#cruiseLines title {
+  display: block;
+  font-size: 1.6rem;
+  margin: 0 1% 0 1%;
+  color: #006A66;
+}
+div#cruisesSection div#cruiseLines p {
+  margin: 0.5rem 1%;
+  font-family: roboto;
+}
+div#cruisesSection div#cruiseLines button {
+  width: 98%;
+  padding: 10px 0;
+  margin: 0 1% 1rem 1%;
+  border-radius: 5px;
+  border: none;
+  background-color: #006A66;
+  color: #FFFDD4;
+}
+div#cruisesSection div#cruiseLines button:hover {
+  background-color: #003735;
+}
+
+/* ------------------------------------------------------------------------------ main agents section -------------------------------------------------------------------- */
+div#agentSection {
+  margin-bottom: 2rem;
+}
+div#agentSection h1 {
+  color: #006A66;
+  margin-left: 1%;
+}
+div#agentSection img {
+  width: 100%;
+}
+div#agentSection h4 {
+  color: #006A66;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+div#agentSection p {
+  margin-left: 1%;
+  font-family: roboto;
+  margin-top: 0;
+}
+div#agentSection p.sp1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div#agentSection h4.reviews {
+  margin-bottom: 1.5rem;
+}
+div#agentSection div {
+  border: 2px solid #006A66;
+  border-radius: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1rem;
+}
+div#agentSection div i {
+  padding-left: 1rem;
+  font-family: roboto;
+}
+div#agentSection div p.rating {
+  color: #006A66;
+  margin-bottom: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------------- main booking section -------------------------------------------------------------------- */
+div#bookSection h1 {
+  margin-left: 1%;
+  color: #006A66;
+}
+div#bookSection form fieldset {
+  margin: 0 0 2rem 0;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+div#bookSection form label.label {
+  display: block;
+  padding-top: 1rem;
+  color: #006A66;
+  font-size: 0.8rem;
+}
+div#bookSection form label.label input, div#bookSection form label.label select {
+  display: block;
+  font-size: 1rem;
+  border: solid 2px #006A66;
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: #006A66;
+  width: 100%;
+  max-width: 20rem;
+}
+div#bookSection form label.label input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+div#bookSection form label.label input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+div#bookSection form label.label input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+div#bookSection form input.submitBtn {
+  border: none;
+  background-color: #006A66;
+  color: white;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+div#bookSection form input.submitBtn:hover {
+  background-color: #003735;
+}
+div#bookSection form label.label input:required {
+  border-left: red solid 5px;
+}
+div#bookSection form label.label input:required:valid {
+  border-left: green solid 5px;
+}
+
+/* --------------------------------------------------------------------- main confirm booking section -------------------------------------------------------------------- */
+div#confirmSection h3 {
+  font-family: roboto;
+  display: block;
+  border: solid 2px #006A66;
+  border-radius: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 1rem;
+  background-color: #FFFDD4;
+  color: #006A66;
+}
+
+/* --------------------------------------------------------------------- main form submission section -------------------------------------------------------------------- */
+div#ThankYouSection h3 {
+  display: block;
+  border: solid 2px #006A66;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 4rem 1%;
+  border-radius: 5px;
+  color: #006A66;
+  font-family: roboto;
+}
+
+/* ------------------------------------------------------------------------------- footer section ---------------------------------------------------------------------------- */
 div#footerWrapper {
   background-color: #006A66;
   padding-bottom: 1rem;
@@ -653,31 +818,49 @@ div#linksWrapper p a {
   header {
     padding: 0;
   }
-  header figure.logo {
-    padding-bottom: 0;
-    margin-bottom: -1.3rem;
-    padding-bottom: 0;
-  }
   header a {
-    display: block;
-    float: right;
-    margin: 0 1% 1rem 0;
-    padding: 0;
-    text-decoration: none;
+    display: none;
   }
-  /* ---------------------------------------------------- main section ------------------------------------------------------------ */
-  div#articles div.article1, div#articles div.article2, div#articles div.article3, div#articles div.article4 {
+  /* -------------------------------------------------------------------------------------- main section -------------------------------------------------------------------- */
+  div#homepageSection div#articles div.article1, div#homepageSection div#articles div.article2, div#homepageSection div#articles div.article3, div#homepageSection div#articles div.article4 {
     flex-basis: 32%;
   }
-  div#footerDetails {
+  div#homepageSection div#footerDetails {
     display: flex;
     flex-wrap: wrap;
   }
-  div#footerDetails div#contactInfo, div#footerDetails div#newsLetter {
+  div#homepageSection div#footerDetails div#contactInfo, div#homepageSection div#footerDetails div#newsLetter {
     flex-basis: 50%;
   }
-  /* ---------------------------------------------------- footer section ------------------------------------------------------------ */
-  div#newsLetter {
+  div#cruisesSection {
+    margin-bottom: 6rem;
+  }
+  div#cruisesSection div#cruiseLines div.australia, div#cruisesSection div#cruiseLines div.catalina, div#cruisesSection div#cruiseLines div.china {
+    margin-top: 6rem;
+  }
+  div#cruisesSection div#cruiseLines div img {
+    float: left;
+    width: 300px;
+    margin: 0 1% 0.5% 1%;
+  }
+  div#cruisesSection div#cruiseLines div button {
+    float: right;
+    width: 20%;
+  }
+  div#agentSection img {
+    width: 40%;
+    float: right;
+    margin: 0 1% 0.5rem 0.5rem;
+  }
+  /* ------------------------------------------------------------------------------- footer section ---------------------------------------------------------------------------- */
+  div#footerWrapper div#footerDetails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div#footerWrapper div#footerDetails div#contactInfo, div#footerWrapper div#footerDetails div#newsLetter {
+    flex-basis: 50%;
+  }
+  div#footerWrapper div#newsLetter {
     padding-top: 0.8rem;
   }
   div#linksWrapper {
@@ -710,6 +893,16 @@ div#linksWrapper p a {
     order: 5;
   }
   /* ---------------------------------------------------- Header section ------------------------------------------------------------ */
+  header figure.logo {
+    margin-bottom: -1.1rem;
+  }
+  header a {
+    display: block;
+    float: right;
+    margin: 0 1% 1rem 0;
+    padding: 0;
+    text-decoration: none;
+  }
   /* ---------------------------------------------------- nav section ------------------------------------------------------------ */
   nav {
     padding-top: 0.6rem;
@@ -781,20 +974,26 @@ div#linksWrapper p a {
     padding: 6.75px 15px;
   }
   /* ---------------------------------------------------- main section ------------------------------------------------------------ */
-  div#articles div.article1, div#articles div.article2, div#articles div.article3, div#articles div.article4 {
+  div#homepageSection div#articles div.article1, div#homepageSection div#articles div.article2, div#homepageSection div#articles div.article3, div#homepageSection div#articles div.article4 {
     flex-basis: 24%;
   }
-  div#footerDetails {
+  /* -------------------------------------------------------- footer section ------------------------------------------------------------- */
+  div#footerWrapper div#footerDetails {
     justify-content: space-between;
   }
-  div#footerDetails div#contactInfo, div#footerDetails div#newsLetter, div#footerDetails div#aboutUs {
+  div#footerWrapper div#footerDetails div#contactInfo {
+    flex-basis: 26%;
+  }
+  div#footerWrapper div#footerDetails div#newsLetter {
+    flex-basis: 38%;
+  }
+  div#footerWrapper div#footerDetails div#aboutUs {
     flex-basis: 32%;
   }
-  /* -------------------------------------------------------- footer section ------------------------------------------------------------- */
-  div#newsLetter h2 {
+  div#footerWrapper div#newsLetter h2 {
     margin-top: 1.2rem;
   }
-  div#aboutUs h2 {
+  div#footerWrapper div#aboutUs h2 {
     margin-top: 1.9rem;
   }
 }/*# sourceMappingURL=styles.css.map */

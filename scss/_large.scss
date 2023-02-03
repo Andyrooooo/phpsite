@@ -12,9 +12,33 @@ div#bodyWrapper {
     div#linksWrapper {order: 5}
 }
 
-/* ---------------------------------------------------- Header section ------------------------------------------------------------ */
 
+
+
+
+
+
+
+/* ---------------------------------------------------- Header section ------------------------------------------------------------ */
+header {
+    figure.logo {
+        margin-bottom: -1.1rem;
+    }
+    a {
+        display: block;
+        float: right;
+        margin: 0 1% 1rem 0;
+        padding: 0;
+        text-decoration: none;
+    }
+}
 /* ---------------------------------------------------- nav section ------------------------------------------------------------ */
+
+
+
+
+
+
 nav {
     padding-top: .6rem;
     padding-bottom: 1.2rem;
@@ -112,27 +136,40 @@ nav {
 
 
 /* ---------------------------------------------------- main section ------------------------------------------------------------ */
-div#articles {
-    div.article1, div.article2, div.article3, div.article4 {
-    flex-basis: 24%;
+div#homepageSection {
+    div#articles {
+        div.article1, div.article2, div.article3, div.article4 {
+        flex-basis: 24%;
+        }
     }
 }
 
-div#footerDetails {
-    justify-content: space-between;
 
-    div#contactInfo, div#newsLetter, div#aboutUs {
-        flex-basis: 32%;
-    }
-}
 
 /* -------------------------------------------------------- footer section ------------------------------------------------------------- */
-div#newsLetter {
-    h2 {
-        margin-top: 1.2rem;
-    }
-}
+div#footerWrapper {
 
-div#aboutUs {
-    h2 {margin-top: 1.9rem;}
+    div#footerDetails {
+        justify-content: space-between;
+    
+        div#contactInfo {
+            flex-basis: 26%;
+        }
+        div#newsLetter {
+            flex-basis: 38%;
+        }
+        div#aboutUs {
+            flex-basis: 32%;
+        }
+    }
+
+    div#newsLetter {
+        h2 {
+            margin-top: 1.2rem;
+        }
+    }
+    
+    div#aboutUs {
+        h2 {margin-top: 1.9rem;}
+    }
 }

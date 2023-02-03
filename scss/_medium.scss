@@ -1,23 +1,20 @@
 
+
 /* ---------------------------------------------------- Header section ------------------------------------------------------------ */
 header {
     padding: 0;
-    figure.logo {
-        padding-bottom: 0;
-        margin-bottom: -1.3rem;
-        padding-bottom: 0;
-    }
     a {
-        display: block;
-        float: right;
-        margin: 0 1% 1rem 0;
-        padding: 0;
-        text-decoration: none;
+        display: none;
     }
     }
 
 
-/* ---------------------------------------------------- main section ------------------------------------------------------------ */
+
+
+
+
+/* -------------------------------------------------------------------------------------- main section -------------------------------------------------------------------- */
+div#homepageSection {
     div#articles {
         div.article1, div.article2, div.article3, div.article4 {
         flex-basis: 32%;
@@ -32,14 +29,58 @@ header {
             flex-basis: 50%;
         }
     }
-
-
-
-/* ---------------------------------------------------- footer section ------------------------------------------------------------ */
-div#newsLetter {
-    padding-top: .8rem;
 }
 
+div#cruisesSection {
+    margin-bottom: 6rem;
+    div#cruiseLines {
+            div.australia, div.catalina, div.china {margin-top: 6rem;}
+            div {
+                img {
+                    float: left;
+                    width: 300px;
+                    margin: 0 1% .5% 1%;
+                }
+
+                button {
+                    float: right;
+                    width: 20%;
+                }
+            }
+        }
+}
+
+div#agentSection {
+    img {
+        width: 40%;
+        float: right;
+        margin: 0 1% .5rem .5rem;
+    }
+}  
+
+
+
+    /* ------------------------------------------------------------------------------- footer section ---------------------------------------------------------------------------- */
+
+
+
+
+div#footerWrapper {
+
+    div#footerDetails {
+        display: flex;
+        flex-wrap: wrap;
+
+        div#contactInfo, div#newsLetter{
+            flex-basis: 50%;
+        }
+    }
+
+    div#newsLetter {
+        padding-top: .8rem;
+    }
+    
+}
 
     div#linksWrapper {
         max-width: 60rem;

@@ -1,0 +1,11 @@
+main {
+  min-width: 1rem;
+  max-width: 35rem;
+}
+
+main div#cruiseLines {
+  margin-bottom: 1rem;
+}
+main div#cruiseLines img {
+  width: 100%;
+}/*# sourceMappingURL=small.css.map */

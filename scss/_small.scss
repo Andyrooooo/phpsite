@@ -54,6 +54,14 @@ body {
             padding-top: 5px;
         }
 
+        .parent {
+            color: darken($color: $colorTwo, $amount: 20%); /* This is where we change the parent */
+        }
+
+        .active {
+            color: darken($color: $colorTwo, $amount: 50%); /* This is where we change the active */
+        }
+
         li.book {
             padding-bottom: 5px;
             padding-top: 5px;
@@ -147,7 +155,7 @@ body {
 /* ---------------------------------------------------- Header section ------------------------------------------------------------ */
 header {
     figure.logo {
-        margin: 1rem 0 -0.1rem 1%;
+        margin: 1rem 0 1rem 1%;
         padding-top: .3rem;
     }
     a {
@@ -157,8 +165,14 @@ header {
     }
 }
 
-/* ---------------------------------------------------- main section ------------------------------------------------------------ */
-main {
+
+
+
+
+
+/* --------------------------------------------------------------------------- main homepage section -------------------------------------------------------------------- */
+
+div#homepageSection {
     .swiper {
         margin-bottom: 1rem;
         .swiper-wrapper {
@@ -187,51 +201,241 @@ main {
         margin-left: 1%;
         color: $colorOne
     }
+
+    // Blog posts
+
+    div#articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        label {
+            text-align: center;
+            display: block;
+            color: $colorTwo;
+            padding: 10px 0;
+        }
+
+        .top {
+            position: relative;
+            z-index: 999;
+            transform: translateY(100%);
+            background-color:rgb(0, 106, 102, 0.5);
+        }
+
+        .bottom {
+            transform: translateY(-111%);
+            /* transform: translateY(-214%); */
+            background-color:rgb(0, 106, 102, 0.5);
+        }
+
+        div.article1, div.article2, div.article3, div.article4 {
+            flex-basis: 48%;
+        }
+        img {
+            width: 100%;
+            opacity: .75;
+        }
+
+        img:hover{
+            opacity: 1;
+        }
+    }
     
 }
 
+/* ----------------------------------------------------------------------------- main cruises section -------------------------------------------------------------------- */
 
-
-// Blog posts
-
-div#articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    label {
-        text-align: center;
-        display: block;
-        color: $colorTwo;
-        padding: 10px 0;
+div#cruisesSection {
+    h1 {
+        color: $colorOne;
+        margin-left: 1%;
+        margin-bottom: 1rem;
     }
 
-    .top {
-        position: relative;
-        z-index: 999;
-        transform: translateY(100%);
-        background-color:rgb(0, 106, 102, 0.5);
-    }
+    div#cruiseLines {
+        div {  
+            margin-bottom: 1rem;
+        }
 
-    .bottom {
-        transform: translateY(-111%);
-        /* transform: translateY(-214%); */
-        background-color:rgb(0, 106, 102, 0.5);
-    }
+        img {width: 100%;}
 
-    div.article1, div.article2, div.article3, div.article4 {
-        flex-basis: 48%;
-    }
-    img {
-        width: 100%;
-        opacity: .75;
-    }
+        title {
+            display: block;
+            font-size: 1.6rem;
+            margin: 0 1% 0 1%;
+            color: $colorOne;
+        }
 
-    img:hover{
-        opacity: 1;
+        p {
+            margin: .5rem 1%;
+            font-family: roboto;
+        }
+
+        button {
+            width: 98%;
+            padding: 10px 0;
+            margin: 0 1% 1rem 1%;
+            border-radius: 5px;
+            border: none;
+            background-color: $colorOne;
+            color: $colorTwo;
+        }
+
+        button:hover {background-color: darken($color: $colorOne, $amount: 10%);}
     }
 }
-/* ---------------------------------------------------- footer section ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ main agents section -------------------------------------------------------------------- */
+
+div#agentSection {
+    margin-bottom: 2rem;
+
+        h1 {
+            color: $colorOne;
+            margin-left: 1%;
+        }
+
+        img {width: 100%;}
+
+        h4 {
+            color: $colorOne;
+            margin-left: 1%;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-left: 1%;
+            font-family: roboto;
+            margin-top: 0;
+        }
+
+        p.sp1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h4.reviews {margin-bottom: 1.5rem;}
+
+        div {
+            border: 2px solid $colorOne;
+            border-radius: 5px;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 1rem;
+
+            i {
+                padding-left: 1rem;
+                font-family: roboto;
+            }
+
+            p.rating {
+                color: $colorOne;
+                margin-bottom: .5rem;
+            }
+        }
+}
+
+/* ----------------------------------------------------------------------------- main booking section -------------------------------------------------------------------- */
+
+div#bookSection {
+    h1 {
+        margin-left: 1%;
+        color: $colorOne;
+    }
+
+    form {
+        fieldset {
+            margin: 0 0 2rem 0;
+            border: none;
+            border-radius: 10px;
+            padding: .5rem 2%;
+        }
+        
+        label.label {
+            display: block;
+            padding-top: 1rem;
+            color: $colorOne;
+            font-size: .8rem;
+        }
+        
+        label.label input, label.label select {
+            display: block;
+            font-size: 1rem;
+            border: solid 2px $colorOne;
+            border-radius: 5px;
+            padding: .75rem;
+            color: $colorOne;
+            width: 100%;
+            max-width: 20rem;
+        }
+        
+        label.label input::placeholder {
+            color: rgb(0, 0, 0, 0.4);
+        }
+        
+        input.submitBtn {
+            border: none;
+            background-color: $colorOne;
+            color: white;
+            border-radius: 5px;
+            padding: .75rem 1.5rem;
+            margin: 0 0 2rem 2%;
+            width: 96%;
+            max-width: 20rem;
+        }
+
+        input.submitBtn:hover {
+            background-color: darken($color: $colorOne, $amount: 10%);
+        }
+        
+        label.label input:required {
+            border-left: red solid 5px;
+        }
+        
+        
+        
+        label.label input:required:valid {
+            border-left: green solid 5px;
+        }
+    }
+}
+
+/* --------------------------------------------------------------------- main confirm booking section -------------------------------------------------------------------- */
+
+div#confirmSection {
+    h3 {
+        font-family: roboto;
+        display: block;
+        border: solid 2px $colorOne;
+        border-radius: 5px;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 1rem;
+        background-color: $colorTwo;
+        color: $colorOne;
+    }
+}
+
+/* --------------------------------------------------------------------- main form submission section -------------------------------------------------------------------- */
+
+
+div#ThankYouSection {
+    h3 {
+        display: block;
+        border: solid 2px $colorOne;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 4rem 1%;
+        border-radius: 5px;
+        color: $colorOne;
+        font-family: roboto;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------------- footer section ---------------------------------------------------------------------------- */
 div#footerWrapper {
     background-color: $colorOne;
     padding-bottom: 1rem;
